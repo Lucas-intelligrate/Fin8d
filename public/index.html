@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fin8d — 財務系統</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: radial-gradient(circle at top, #1e3a5f, var(--bg));
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 640px;
+      background: var(--card);
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .badge {
+      display: inline-block;
+      background: #0ea5e9;
+      color: #082f49;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 1rem;
+    }
+    p { color: var(--muted); line-height: 1.7; margin-bottom: 1rem; }
+    ul { color: var(--muted); margin-left: 1.25rem; line-height: 1.8; }
+    .status {
+      margin-top: 1.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid #334155;
+      font-size: 0.875rem;
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="badge">DEV</span>
+    <h1>Fin8d</h1>
+    <p>雲端財務系統 — 開發環境已上線。Phase 1 將建置會計核心：傳票、總帳與財務報表。</p>
+    <ul>
+      <li>Phase 1 — 財務核心（MVP）</li>
+      <li>Phase 2 — 帳款與收付款</li>
+      <li>Phase 3 — 業務整合</li>
+      <li>Phase 4 — 進階與合規</li>
+    </ul>
+    <p class="status">Service status: running</p>
+  </main>
+</body>
+</html>
