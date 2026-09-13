@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關帳 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">總覽</div>
+        <a class="nav-link" href="dashboard.html">儀表板</a>
+        <div class="nav-section">總帳</div>
+        <a class="nav-link" href="vouchers-list.html">傳票列表</a>
+        <a class="nav-link" href="voucher-entry.html">新增傳票</a>
+        <div class="nav-section">主檔</div>
+        <a class="nav-link" href="chart-of-accounts.html">會計科目</a>
+        <div class="nav-section">報表</div>
+        <a class="nav-link" href="trial-balance.html">試算表</a>
+        <div class="nav-section">系統</div>
+        <a class="nav-link active" href="fiscal-close.html">關帳</a>
+        <a class="nav-link" href="settings.html">設定</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">系統 / <strong>關帳</strong></div>
+        <div class="topbar-actions"><span>王主管 ▾</span></div>
+      </header>
+      <div class="content">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">會計期間</div>
+            <div class="card-body table-wrap" style="padding:0">
+              <table>
+                <thead><tr><th>期間</th><th>起迄日</th><th>狀態</th><th>操作</th></tr></thead>
+                <tbody>
+                  <tr style="background:#eff6ff">
+                    <td><strong>2026-09</strong></td><td>09/01 — 09/30</td>
+                    <td><span class="badge badge-open">開放中</span></td>
+                    <td><button class="btn btn-sm btn-primary">關帳</button></td>
+                  </tr>
+                  <tr>
+                    <td>2026-08</td><td>08/01 — 08/31</td>
+                    <td><span class="badge badge-closed">已關帳</span></td>
+                    <td><button class="btn btn-sm btn-outline">反關帳</button></td>
+                  </tr>
+                  <tr>
+                    <td>2026-07</td><td>07/01 — 07/31</td>
+                    <td><span class="badge badge-closed">已關帳</span></td>
+                    <td><span style="color:var(--muted);font-size:0.8rem">—</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">關帳前檢查 — 2026-09</div>
+            <div class="card-body">
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem;font-size:0.9rem">
+                <li style="color:var(--success)">✓ 試算表借貸平衡</li>
+                <li style="color:var(--success)">✓ 無草稿傳票</li>
+                <li style="color:var(--warning)">⚠ 2 張待審傳票 — <a href="vouchers-list.html">查看清單</a></li>
+                <li style="color:var(--muted)">○ 所有待審傳票需先核准或退回</li>
+              </ul>
+              <div style="margin-top:1.5rem;padding:1rem;background:#fef3c7;border-radius:8px;font-size:0.85rem">
+                關帳後，2026-09 期間的傳票將無法新增或修改。此操作需財務主管權限。
+              </div>
+              <button class="btn btn-primary" style="margin-top:1rem;width:100%;justify-content:center" disabled title="需先處理待審傳票">確認關帳 2026-09</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup"><a href="index.html" style="color:#fff">Mockup</a></div>
+</body>
+</html>

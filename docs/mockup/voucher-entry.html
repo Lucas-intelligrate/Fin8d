@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>新增傳票 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">總覽</div>
+        <a class="nav-link" href="dashboard.html">儀表板</a>
+        <div class="nav-section">總帳</div>
+        <a class="nav-link" href="vouchers-list.html">傳票列表</a>
+        <a class="nav-link active" href="voucher-entry.html">新增傳票</a>
+        <div class="nav-section">主檔</div>
+        <a class="nav-link" href="chart-of-accounts.html">會計科目</a>
+        <div class="nav-section">報表</div>
+        <a class="nav-link" href="trial-balance.html">試算表</a>
+        <div class="nav-section">系統</div>
+        <a class="nav-link" href="fiscal-close.html">關帳</a>
+        <a class="nav-link" href="settings.html">設定</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">總帳 / <strong>新增傳票</strong></div>
+        <div class="topbar-actions"><span>林會計 ▾</span></div>
+      </header>
+      <div class="content">
+        <div class="card">
+          <div class="card-header">傳票表頭</div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group"><label>傳票編號</label><input class="form-control mono" value="V202609-0129（自動）" readonly style="background:#f8fafc" /></div>
+              <div class="form-group"><label>傳票日期</label><input class="form-control" type="date" value="2026-09-13" /></div>
+              <div class="form-group"><label>傳票類型</label><select class="form-control"><option>一般</option><option>調整</option><option>結帳</option></select></div>
+            </div>
+            <div class="form-group"><label>整張摘要</label><input class="form-control" value="9月文具用品採購" /></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">分錄明細</div>
+          <div class="card-body table-wrap" style="padding:0">
+            <table>
+              <thead>
+                <tr>
+                  <th style="width:40px">#</th>
+                  <th>會計科目</th>
+                  <th>摘要</th>
+                  <th>部門</th>
+                  <th class="text-right">借方</th>
+                  <th class="text-right">貸方</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td><select class="form-control"><option>5202 文具用品</option><option>5101 薪資費用</option></select></td>
+                  <td><input class="form-control" value="A4 影印紙、原子筆" /></td>
+                  <td><select class="form-control"><option>行政部</option><option>業務部</option></select></td>
+                  <td><input class="form-control text-right" value="1,280" /></td>
+                  <td><input class="form-control text-right" value="" placeholder="0" /></td>
+                  <td><button class="btn btn-sm btn-outline">✕</button></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><select class="form-control"><option>1101 現金</option><option>1102 銀行存款</option></select></td>
+                  <td><input class="form-control" value="現金付訖" /></td>
+                  <td><select class="form-control"><option>—</option></select></td>
+                  <td><input class="form-control text-right" value="" placeholder="0" /></td>
+                  <td><input class="form-control text-right" value="1,280" /></td>
+                  <td><button class="btn btn-sm btn-outline">✕</button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="card-body" style="border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center">
+            <button class="btn btn-outline btn-sm">+ 新增分錄行</button>
+            <div style="text-align:right">
+              <span style="margin-right:1.5rem">借方合計 <strong>1,280</strong></span>
+              <span style="margin-right:1.5rem">貸方合計 <strong>1,280</strong></span>
+              <span class="balance-ok">✓ 借貸平衡</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:0.75rem">
+          <button class="btn btn-outline">存草稿</button>
+          <button class="btn btn-primary">送審</button>
+          <a class="btn btn-outline" href="vouchers-list.html">取消</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup"><a href="index.html" style="color:#fff">Mockup</a></div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>儀表板 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">總覽</div>
+        <a class="nav-link active" href="dashboard.html">儀表板</a>
+        <div class="nav-section">總帳</div>
+        <a class="nav-link" href="vouchers-list.html">傳票列表</a>
+        <a class="nav-link" href="voucher-entry.html">新增傳票</a>
+        <div class="nav-section">主檔</div>
+        <a class="nav-link" href="chart-of-accounts.html">會計科目</a>
+        <div class="nav-section">報表</div>
+        <a class="nav-link" href="trial-balance.html">試算表</a>
+        <div class="nav-section">系統</div>
+        <a class="nav-link" href="fiscal-close.html">關帳</a>
+        <a class="nav-link" href="settings.html">設定</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">總覽 / <strong>儀表板</strong></div>
+        <div class="topbar-actions">
+          <input class="search-box" placeholder="🔍 搜尋傳票、科目..." />
+          <span>🔔</span>
+          <span>林會計 ▾</span>
+        </div>
+      </header>
+      <div class="content">
+        <div class="kpi-grid">
+          <div class="kpi-card">
+            <div class="kpi-label">待審傳票</div>
+            <div class="kpi-value warning">3</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">本月分錄數</div>
+            <div class="kpi-value">128</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">本期損益（9月）</div>
+            <div class="kpi-value positive">+$45,200</div>
+          </div>
+          <div class="kpi-card">
+            <div class="kpi-label">2026-09 關帳</div>
+            <div class="kpi-value" style="font-size:1.1rem;color:var(--primary)">開放中</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:1.5rem;display:flex;gap:0.75rem;flex-wrap:wrap">
+          <a class="btn btn-primary" href="voucher-entry.html">+ 新增傳票</a>
+          <a class="btn btn-outline" href="trial-balance.html">試算表</a>
+          <a class="btn btn-outline" href="fiscal-close.html">月結關帳</a>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-header">最近傳票 <a href="vouchers-list.html">查看全部</a></div>
+            <div class="card-body table-wrap" style="padding:0">
+              <table>
+                <thead><tr><th>編號</th><th>日期</th><th>摘要</th><th>狀態</th></tr></thead>
+                <tbody>
+                  <tr><td class="mono">V202609-0128</td><td>09/12</td><td>辦公用品採購</td><td><span class="badge badge-approved">已核准</span></td></tr>
+                  <tr><td class="mono">V202609-0127</td><td>09/11</td><td>9月租金</td><td><span class="badge badge-pending">待審</span></td></tr>
+                  <tr><td class="mono">V202609-0126</td><td>09/10</td><td>銀行手續費</td><td><span class="badge badge-approved">已核准</span></td></tr>
+                  <tr><td class="mono">V202609-0125</td><td>09/08</td><td>客戶匯款</td><td><span class="badge badge-draft">草稿</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">待辦事項</div>
+            <div class="card-body">
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.75rem">
+                <li style="padding:0.75rem;background:#fef3c7;border-radius:8px;font-size:0.9rem">
+                  ⚠️ <strong>3 張傳票</strong> 等待主管審核
+                  <a href="vouchers-list.html" style="margin-left:0.5rem">處理 →</a>
+                </li>
+                <li style="padding:0.75rem;background:#dbeafe;border-radius:8px;font-size:0.9rem">
+                  📅 會計期間 <strong>2026-09</strong> 將於 9/30 結束，記得關帳
+                </li>
+                <li style="padding:0.75rem;background:#f1f5f9;border-radius:8px;font-size:0.9rem">
+                  ✓ 試算表借貸平衡
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup"><a href="index.html" style="color:#fff">Mockup</a></div>
+</body>
+</html>
