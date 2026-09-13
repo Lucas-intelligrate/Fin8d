@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframes — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+  <style>
+    body { background: #fff; }
+    .wf-page { max-width: 900px; margin: 0 auto; padding: 2rem; }
+    .wf-page h1 { margin-bottom: 0.5rem; }
+    .wf-page > p { color: var(--muted); margin-bottom: 2rem; }
+    .wf-screen { margin-bottom: 3rem; page-break-inside: avoid; }
+    .wf-screen h2 { font-size: 1rem; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+    .wf-frame { border: 2px solid #334155; border-radius: 8px; overflow: hidden; }
+    .wf-top { background: #e2e8f0; padding: 0.5rem 1rem; font-size: 0.75rem; color: #475569; border-bottom: 1px solid #94a3b8; }
+    .wf-body { display: flex; min-height: 280px; }
+    .wf-side { width: 160px; background: #cbd5e1; padding: 0.75rem; font-size: 0.7rem; }
+    .wf-side div { padding: 0.35rem 0; border-bottom: 1px dashed #94a3b8; }
+    .wf-content { flex: 1; padding: 1rem; background: #f8fafc; }
+    .wf-row { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+    .wf-block { flex: 1; border: 2px dashed #94a3b8; padding: 0.75rem; text-align: center; font-size: 0.75rem; color: #64748b; min-height: 2.5rem; }
+    .wf-table { width: 100%; border-collapse: collapse; font-size: 0.7rem; margin-top: 0.5rem; }
+    .wf-table td, .wf-table th { border: 1px dashed #94a3b8; padding: 0.4rem; text-align: center; color: #64748b; }
+  </style>
+</head>
+<body>
+  <div class="wf-page">
+    <h1>Fin8d Wireframes</h1>
+    <p>Phase 1 低保真線框 · 詳細說明見 <a href="../spec/07-wireframes.md">07-wireframes.md</a> · 高保真見 <a href="index.html">Mockup 入口</a></p>
+
+    <div class="wf-screen">
+      <h2>1. 登入</h2>
+      <div class="wf-frame">
+        <div class="wf-top">[ Logo ] Fin8d</div>
+        <div class="wf-body" style="justify-content:center;align-items:center;min-height:320px">
+          <div style="width:280px;border:2px dashed #94a3b8;padding:1.5rem;border-radius:8px">
+            <div class="wf-block" style="margin-bottom:0.75rem">Email 輸入框</div>
+            <div class="wf-block" style="margin-bottom:0.75rem">密碼輸入框</div>
+            <div class="wf-block" style="background:#cbd5e1">[ 登入按鈕 ]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wf-screen">
+      <h2>2. 儀表板</h2>
+      <div class="wf-frame">
+        <div class="wf-top">[≡] Breadcrumb &nbsp;|&nbsp; 搜尋 &nbsp;|&nbsp; 使用者</div>
+        <div class="wf-body">
+          <div class="wf-side">
+            <div>儀表板 ●</div><div>傳票列表</div><div>新增傳票</div><div>會計科目</div><div>報表</div><div>關帳</div><div>設定</div>
+          </div>
+          <div class="wf-content">
+            <div class="wf-row">
+              <div class="wf-block">KPI: 待審</div>
+              <div class="wf-block">KPI: 分錄數</div>
+              <div class="wf-block">KPI: 損益</div>
+              <div class="wf-block">KPI: 關帳</div>
+            </div>
+            <div class="wf-row">
+              <div class="wf-block" style="flex:2">最近傳票表格</div>
+              <div class="wf-block">待辦清單</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wf-screen">
+      <h2>3. 傳票登打</h2>
+      <div class="wf-frame">
+        <div class="wf-top">總帳 / 新增傳票</div>
+        <div class="wf-body">
+          <div class="wf-side"><div>Sidebar</div></div>
+          <div class="wf-content">
+            <div class="wf-row">
+              <div class="wf-block">編號</div><div class="wf-block">日期</div><div class="wf-block">類型</div>
+            </div>
+            <div class="wf-block" style="margin-bottom:0.75rem">整張摘要</div>
+            <table class="wf-table">
+              <tr><th>#</th><th>科目</th><th>摘要</th><th>借方</th><th>貸方</th></tr>
+              <tr><td>1</td><td>[選擇]</td><td>[文字]</td><td>[數字]</td><td>[數字]</td></tr>
+              <tr><td>2</td><td>[選擇]</td><td>[文字]</td><td>[數字]</td><td>[數字]</td></tr>
+            </table>
+            <div class="wf-row" style="margin-top:0.75rem">
+              <div class="wf-block">借方合計</div>
+              <div class="wf-block">貸方合計</div>
+              <div class="wf-block">平衡指示</div>
+            </div>
+            <div class="wf-row">
+              <div class="wf-block" style="max-width:100px">存草稿</div>
+              <div class="wf-block" style="max-width:100px;background:#cbd5e1">送審</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wf-screen">
+      <h2>4. 試算表</h2>
+      <div class="wf-frame">
+        <div class="wf-top">報表 / 試算表</div>
+        <div class="wf-body">
+          <div class="wf-side"><div>Sidebar</div></div>
+          <div class="wf-content">
+            <div class="wf-row">
+              <div class="wf-block" style="max-width:150px">期間選擇</div>
+              <div class="wf-block" style="max-width:100px;background:#cbd5e1">產生</div>
+              <div class="wf-block" style="max-width:100px">匯出</div>
+            </div>
+            <table class="wf-table">
+              <tr><th>科目</th><th>期初借</th><th>期初貸</th><th>本期借</th><th>本期貸</th><th>期末借</th><th>期末貸</th></tr>
+              <tr><td>...</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td>合計</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wf-screen">
+      <h2>5. 關帳</h2>
+      <div class="wf-frame">
+        <div class="wf-top">系統 / 關帳</div>
+        <div class="wf-body">
+          <div class="wf-side"><div>Sidebar</div></div>
+          <div class="wf-content">
+            <div class="wf-row">
+              <div class="wf-block" style="flex:1">期間列表 + 關帳按鈕</div>
+              <div class="wf-block" style="flex:1">關帳前檢查清單<br/>✓ 平衡 ✓ 無草稿 ⚠ 待審</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p style="margin-top:2rem"><a href="index.html">← 返回 Mockup 導覽</a></p>
+  </div>
+</body>
+</html>

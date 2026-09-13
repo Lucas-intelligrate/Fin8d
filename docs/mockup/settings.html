@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>設定 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">總覽</div>
+        <a class="nav-link" href="dashboard.html">儀表板</a>
+        <div class="nav-section">總帳</div>
+        <a class="nav-link" href="vouchers-list.html">傳票列表</a>
+        <a class="nav-link" href="voucher-entry.html">新增傳票</a>
+        <div class="nav-section">主檔</div>
+        <a class="nav-link" href="chart-of-accounts.html">會計科目</a>
+        <div class="nav-section">報表</div>
+        <a class="nav-link" href="trial-balance.html">試算表</a>
+        <div class="nav-section">系統</div>
+        <a class="nav-link" href="fiscal-close.html">關帳</a>
+        <a class="nav-link active" href="settings.html">設定</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">系統 / <strong>設定</strong></div>
+        <div class="topbar-actions"><span>Admin ▾</span></div>
+      </header>
+      <div class="content">
+        <div class="card">
+          <div class="card-header">公司基本資料</div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group"><label>公司名稱</label><input class="form-control" value="智滙科技股份有限公司" /></div>
+              <div class="form-group"><label>統一編號</label><input class="form-control" value="12345678" /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label>會計年度起始月</label><select class="form-control"><option>1 月</option><option selected>1 月</option></select></div>
+              <div class="form-group"><label>本位幣</label><input class="form-control" value="TWD（新台幣）" readonly style="background:#f8fafc" /></div>
+            </div>
+            <button class="btn btn-primary">儲存</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">使用者管理 <button class="btn btn-sm btn-primary">+ 新增使用者</button></div>
+          <div class="card-body table-wrap" style="padding:0">
+            <table>
+              <thead><tr><th>姓名</th><th>Email</th><th>角色</th><th>狀態</th><th></th></tr></thead>
+              <tbody>
+                <tr><td>系統管理員</td><td>admin@intelligrate.com.tw</td><td>Admin</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                <tr><td>王主管</td><td>manager@intelligrate.com.tw</td><td>財務主管</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                <tr><td>林會計</td><td>accountant@intelligrate.com.tw</td><td>會計人員</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">系統參數</div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group"><label>傳票編號格式</label><input class="form-control" value="V{YYYYMM}-{SEQ:5}" /></div>
+              <div class="form-group"><label>Session 逾時（小時）</label><input class="form-control" type="number" value="8" /></div>
+            </div>
+            <button class="btn btn-primary">儲存</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup"><a href="index.html" style="color:#fff">Mockup</a></div>
+</body>
+</html>

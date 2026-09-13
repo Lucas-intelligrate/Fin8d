@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>會計科目 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">總覽</div>
+        <a class="nav-link" href="dashboard.html">儀表板</a>
+        <div class="nav-section">總帳</div>
+        <a class="nav-link" href="vouchers-list.html">傳票列表</a>
+        <a class="nav-link" href="voucher-entry.html">新增傳票</a>
+        <div class="nav-section">主檔</div>
+        <a class="nav-link active" href="chart-of-accounts.html">會計科目</a>
+        <div class="nav-section">報表</div>
+        <a class="nav-link" href="trial-balance.html">試算表</a>
+        <div class="nav-section">系統</div>
+        <a class="nav-link" href="fiscal-close.html">關帳</a>
+        <a class="nav-link" href="settings.html">設定</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">主檔 / <strong>會計科目</strong></div>
+        <div class="topbar-actions"><span>林會計 ▾</span></div>
+      </header>
+      <div class="content">
+        <div class="card">
+          <div class="card-body">
+            <div class="toolbar">
+              <button class="btn btn-primary">+ 新增科目</button>
+              <div class="form-group" style="max-width:200px"><input class="form-control" placeholder="搜尋代碼或名稱" /></div>
+              <div class="form-group" style="max-width:140px">
+                <select class="form-control"><option>全部類型</option><option>資產</option><option>負債</option><option>權益</option><option>收入</option><option>費用</option></select>
+              </div>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>代碼</th><th>科目名稱</th><th>類型</th><th>層級</th><th>統制/明細</th><th>狀態</th><th></th></tr></thead>
+                <tbody>
+                  <tr style="background:#f8fafc;font-weight:600"><td>1</td><td>▼ 資產</td><td>資產</td><td>1</td><td>統制</td><td><span class="badge badge-approved">啟用</span></td><td></td></tr>
+                  <tr style="background:#fafafa"><td style="padding-left:2rem">11</td><td>▼ 流動資產</td><td>資產</td><td>2</td><td>統制</td><td><span class="badge badge-approved">啟用</span></td><td></td></tr>
+                  <tr><td style="padding-left:3rem">1101</td><td>現金</td><td>資產</td><td>3</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr><td style="padding-left:3rem">1102</td><td>銀行存款</td><td>資產</td><td>3</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr><td style="padding-left:3rem">1141</td><td>應收帳款</td><td>資產</td><td>3</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr style="background:#f8fafc;font-weight:600"><td>2</td><td>▼ 負債</td><td>負債</td><td>1</td><td>統制</td><td><span class="badge badge-approved">啟用</span></td><td></td></tr>
+                  <tr><td style="padding-left:2rem">2101</td><td>應付帳款</td><td>負債</td><td>2</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr style="background:#f8fafc;font-weight:600"><td>4</td><td>▼ 收入</td><td>收入</td><td>1</td><td>統制</td><td><span class="badge badge-approved">啟用</span></td><td></td></tr>
+                  <tr><td style="padding-left:2rem">4101</td><td>銷貨收入</td><td>收入</td><td>2</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr style="background:#f8fafc;font-weight:600"><td>5</td><td>▼ 費用</td><td>費用</td><td>1</td><td>統制</td><td><span class="badge badge-approved">啟用</span></td><td></td></tr>
+                  <tr><td style="padding-left:2rem">5101</td><td>薪資費用</td><td>費用</td><td>2</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr><td style="padding-left:2rem">5201</td><td>租金費用</td><td>費用</td><td>2</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                  <tr><td style="padding-left:2rem">5202</td><td>文具用品</td><td>費用</td><td>2</td><td>明細</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup"><a href="index.html" style="color:#fff">Mockup</a></div>
+</body>
+</html>
