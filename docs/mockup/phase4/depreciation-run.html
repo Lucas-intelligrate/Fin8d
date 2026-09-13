@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>折舊作業 — Fin8d Phase 4</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="depreciation-run.html">折舊作業</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">固資 / <strong>月折舊</strong></div><div class="topbar-actions"><button class="btn btn-primary">執行折舊</button></div></header>
+      <div class="content">
+        <div class="toolbar"><div class="form-group"><label>期間</label><select class="form-control"><option>2026-09</option></select></div></div>
+        <div class="card"><div class="card-body table-wrap">
+          <table><thead><tr><th>資產</th><th class="text-right">本期折舊</th><th>費用科目</th><th>累折科目</th></tr></thead>
+          <tbody>
+            <tr><td>FA-001 辦公大樓裝潢</td><td class="text-right">10,000</td><td>6201 折舊費</td><td>1501-累折</td></tr>
+            <tr><td>FA-002 伺服器主機</td><td class="text-right">8,000</td><td>6201 折舊費</td><td>1502-累折</td></tr>
+          </tbody>
+          <tfoot><tr><td><strong>合計</strong></td><td class="text-right"><strong>18,000</strong></td><td colspan="2"></td></tr></tfoot></table>
+        </div></div>
+        <div class="alert alert-success">產生折舊傳票：借 折舊費用 / 貸 累計折舊</div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 4 Mockup</div>
+</body>
+</html>

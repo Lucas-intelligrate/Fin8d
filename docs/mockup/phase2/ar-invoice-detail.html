@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>應收憑單詳情 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="ar-invoices-list.html">應收憑單</a></nav></aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">應收 / <strong>AR202609-0088</strong></div>
+        <div class="topbar-actions">
+          <a class="btn btn-primary" href="receipt-allocate.html">收款沖銷</a>
+          <a class="btn btn-outline" href="ar-invoices-list.html">返回</a>
+        </div>
+      </header>
+      <div class="content">
+        <div class="card">
+          <div class="card-body">
+            <div style="display:flex;gap:2rem;flex-wrap:wrap;margin-bottom:1rem">
+              <span><strong>客戶：</strong>C001 台灣科技</span>
+              <span><strong>日期：</strong>2026-09-10</span>
+              <span><strong>到期：</strong>2026-10-10</span>
+              <span><span class="badge badge-open">未結清</span></span>
+            </div>
+            <div class="kpi-grid" style="margin-bottom:0">
+              <div class="kpi-card"><div class="kpi-label">憑單金額</div><div class="kpi-value" style="font-size:1.25rem">250,000</div></div>
+              <div class="kpi-card"><div class="kpi-label">已收</div><div class="kpi-value" style="font-size:1.25rem">0</div></div>
+              <div class="kpi-card"><div class="kpi-label">未收</div><div class="kpi-value warning" style="font-size:1.25rem">250,000</div></div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">關聯傳票</div>
+          <div class="card-body table-wrap">
+            <table>
+              <thead><tr><th>傳票編號</th><th>日期</th><th>類型</th><th>狀態</th></tr></thead>
+              <tbody>
+                <tr><td class="mono"><a href="../voucher-detail-approved.html">V202609-0105</a></td><td>2026-09-10</td><td>立帳</td><td><span class="badge badge-approved">已核准</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">收款紀錄</div>
+          <div class="card-body empty-state"><div class="empty-state-icon">💰</div><p>尚無收款紀錄</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

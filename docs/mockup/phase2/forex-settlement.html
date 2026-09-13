@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>匯兌損益 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link" href="bank-batch-payment.html">批次收付</a><a class="nav-link active" href="forex-settlement.html">匯兌損益</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">銀行 / <strong>匯兌結算</strong></div></header>
+      <div class="content">
+        <div class="card"><div class="card-header">USD 收款結算範例</div><div class="card-body">
+          <div class="form-row">
+            <div class="form-group"><label>原幣金額 (USD)</label><input class="form-control" value="10000" readonly /></div>
+            <div class="form-group"><label>立帳匯率</label><input class="form-control" value="31.50" readonly /></div>
+            <div class="form-group"><label>實際入帳匯率</label><input class="form-control" value="31.85" /></div>
+            <div class="form-group"><label>匯兌損益 (TWD)</label><input class="form-control" value="3,500" readonly style="color:var(--success);font-weight:600" /></div>
+          </div>
+          <button class="btn btn-primary">產生匯兌傳票</button>
+        </div></div>
+        <p style="font-size:0.85rem;color:var(--muted)">流程：BANK-02 正向 · 收付匯差自動分錄</p>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

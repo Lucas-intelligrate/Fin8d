@@ -17,15 +17,14 @@
 
 ## Mockup 頁面
 
-靜態 HTML 原型（**37 頁**，含各模組正向／負向狀態），瀏覽器開啟 [index.html](../mockup/index.html) 依模組導覽。
+靜態 HTML 原型（**84 頁**，Phase 1–4 全模組，含正向／負向狀態），瀏覽器開啟 [index.html](../mockup/index.html)。
 
-| 模組 | 正向範例 | 負向範例 |
-|------|----------|----------|
-| AUTH | login, dashboard, onboarding | login-error, access-denied, password-reset-error |
-| MD | chart-of-accounts, parties, currencies | account-form-error |
-| GL | voucher-entry, voucher-approve, voucher-detail | voucher-entry-unbalanced, voucher-approve-blocked |
-| RPT | trial-balance, balance-sheet, income-statement | report-empty |
-| SYS | settings, fiscal-close-success, audit-log | fiscal-close（檢查失敗）, error-generic |
+| Phase | 頁數 | 模組 |
+|-------|------|------|
+| Phase 1 財務核心 | 37 | AUTH, MD, GL, RPT, SYS |
+| Phase 2 帳款收付 | 17 | AR, AP, 票據, 銀行批次, 匯兌 |
+| Phase 3 業務整合 | 17 | 銷售, 採購, 發票, 期末結帳 |
+| Phase 4 進階合規 | 13 | 固資, 預算, 簽核, 財務分析 |
 
 完整對照表見 [mockup/index.html](../mockup/index.html) 與 [flows/](./flows/README.md)。
 

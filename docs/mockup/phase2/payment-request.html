@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>請款單 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="payment-request.html">請款單</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">應付 / <strong>請款單</strong></div><div class="topbar-actions"><button class="btn btn-primary">+ 新增請款</button></div></header>
+      <div class="content">
+        <div class="card"><div class="card-body table-wrap">
+          <table>
+            <thead><tr><th>請款號</th><th>申請人</th><th>廠商</th><th class="text-right">金額</th><th>狀態</th><th>操作</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">PR202609-0015</td><td>張業務</td><td>V003 差旅報銷</td><td class="text-right">12,800</td><td><span class="badge badge-pending">待核准</span></td><td><a href="../phase4/approval-detail.html" class="btn btn-sm btn-outline">審核</a></td></tr>
+              <tr><td class="mono">PR202609-0012</td><td>李採購</td><td>V001 文具供應</td><td class="text-right">45,600</td><td><span class="badge badge-approved">已核准</span></td><td><a href="payment-form.html" class="btn btn-sm btn-primary">付款</a></td></tr>
+            </tbody>
+          </table>
+        </div></div>
+        <p style="font-size:0.85rem;color:var(--muted)">流程：AP-03 正向 · 請款 → 核准 → 付款（Phase 4 簽核整合）</p>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

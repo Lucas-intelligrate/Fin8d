@@ -1,160 +1,239 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fin8d Mockup 索引</title>
-  <link rel="stylesheet" href="assets/mockup.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fin8d Mockup 索引 — 全 Phase</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
   <style>
-    .index-page { max-width: 960px; margin: 0 auto; padding: 2rem; }
-    .index-page h1 { margin-bottom: 0.5rem; }
-    .index-page .meta { color: var(--text-muted); margin-bottom: 2rem; font-size: 0.9rem; }
-    .module-block { margin-bottom: 2rem; }
-    .module-block h2 { font-size: 1.1rem; margin-bottom: 0.75rem; padding-bottom: 0.35rem; border-bottom: 1px solid var(--border); }
-    .flow-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    @media (max-width: 640px) { .flow-grid { grid-template-columns: 1fr; } }
-    .flow-col h3 { font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.5rem; text-transform: uppercase; letter-spacing: 0.05em; }
-    .flow-col.positive h3 { color: var(--success); }
-    .flow-col.negative h3 { color: var(--danger); }
+    .hub { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+    .hub h1 { margin-bottom: 0.35rem; }
+    .hub > .subtitle { color: var(--muted); margin-bottom: 1.5rem; }
+    .phase-nav { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+    .phase-tab { padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid var(--border); background: #fff; font-size: 0.875rem; cursor: pointer; text-decoration: none; color: var(--text); }
+    .phase-tab:hover, .phase-tab.active { background: var(--primary); color: #fff; border-color: var(--primary); text-decoration: none; }
+    .phase-block { margin-bottom: 2.5rem; }
+    .phase-block h2 { font-size: 1.15rem; margin-bottom: 0.25rem; display: flex; align-items: center; gap: 0.5rem; }
+    .phase-badge { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 4px; font-weight: 600; }
+    .phase-badge.p1 { background: #dbeafe; color: #1d4ed8; }
+    .phase-badge.p2 { background: #dcfce7; color: #15803d; }
+    .phase-badge.p3 { background: #fef3c7; color: #b45309; }
+    .phase-badge.p4 { background: #f3e8ff; color: #7c3aed; }
+    .phase-desc { font-size: 0.85rem; color: var(--muted); margin-bottom: 1rem; }
+    .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+    .module-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: 1rem 1.25rem; }
+    .module-card h3 { font-size: 0.95rem; margin-bottom: 0.5rem; }
     .page-list { list-style: none; }
-    .page-list li { margin-bottom: 0.35rem; }
-    .page-list a { color: var(--primary); text-decoration: none; font-size: 0.95rem; }
-    .page-list a:hover { text-decoration: underline; }
-    .page-list .flow-id { font-size: 0.75rem; color: var(--text-muted); margin-left: 0.35rem; }
-    .doc-links { margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
-    .doc-links a { color: var(--primary); margin-right: 1rem; }
+    .page-list li { margin-bottom: 0.3rem; font-size: 0.875rem; }
+    .page-list a { color: var(--primary); }
+    .page-list .neg { color: var(--danger); font-size: 0.75rem; }
+    .stats { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; font-size: 0.85rem; color: var(--muted); }
+    .stats strong { color: var(--text); }
   </style>
 </head>
 <body>
-  <div class="index-page">
+  <div class="hub">
     <h1>Fin8d Mockup 索引</h1>
-    <p class="meta">Phase 1 靜態原型 · 各模組正向／負向流程對應 · 規格見 <code>docs/spec/flows/</code></p>
+    <p class="subtitle">Phase 1–4 全模組靜態原型 · 各頁含正向／負向狀態 · 規格見 <code>docs/spec/flows/</code></p>
 
-    <div class="module-block">
-      <h2>1. 認證與權限 (AUTH)</h2>
-      <div class="flow-grid">
-        <div class="flow-col positive">
-          <h3>正向</h3>
+    <div class="stats">
+      <span>Phase 1：<strong>37</strong> 頁</span>
+      <span>Phase 2：<strong>17</strong> 頁</span>
+      <span>Phase 3：<strong>17</strong> 頁</span>
+      <span>Phase 4：<strong>13</strong> 頁</span>
+      <span>合計：<strong>84</strong> 頁</span>
+    </div>
+
+    <nav class="phase-nav">
+      <a class="phase-tab active" href="#phase1">Phase 1 財務核心</a>
+      <a class="phase-tab" href="#phase2">Phase 2 帳款收付</a>
+      <a class="phase-tab" href="#phase3">Phase 3 業務整合</a>
+      <a class="phase-tab" href="#phase4">Phase 4 進階合規</a>
+      <a class="phase-tab" href="wireframes.html">Wireframe</a>
+    </nav>
+
+    <!-- Phase 1 -->
+    <section id="phase1" class="phase-block">
+      <h2><span class="phase-badge p1">Phase 1</span> 財務核心 MVP</h2>
+      <p class="phase-desc">主檔、傳票、報表、關帳、認證 — 可獨立運作的會計底層</p>
+      <div class="module-grid">
+        <div class="module-card">
+          <h3>認證 AUTH</h3>
           <ul class="page-list">
-            <li><a href="login.html">登入</a><span class="flow-id">AUTH-01</span></li>
-            <li><a href="password-reset-request.html">申請重設密碼</a><span class="flow-id">AUTH-02</span></li>
-            <li><a href="dashboard.html">登入後儀表板</a><span class="flow-id">AUTH-03</span></li>
-            <li><a href="onboarding.html">首次設定精靈</a><span class="flow-id">AUTH-04</span></li>
+            <li><a href="login.html">登入</a> · <a href="login-error.html"><span class="neg">失敗</span></a></li>
+            <li><a href="password-reset-request.html">重設密碼</a> · <a href="password-reset-error.html"><span class="neg">失效</span></a></li>
+            <li><a href="dashboard.html">儀表板</a> · <a href="access-denied.html"><span class="neg">403</span></a></li>
+            <li><a href="onboarding.html">首次設定</a></li>
           </ul>
         </div>
-        <div class="flow-col negative">
-          <h3>負向</h3>
+        <div class="module-card">
+          <h3>主檔 MD</h3>
           <ul class="page-list">
-            <li><a href="login-error.html">登入失敗</a><span class="flow-id">AUTH-01 ✗</span></li>
-            <li><a href="password-reset-error.html">重設連結失效</a><span class="flow-id">AUTH-02 ✗</span></li>
-            <li><a href="access-denied.html">權限不足</a><span class="flow-id">AUTH-03 ✗</span></li>
+            <li><a href="chart-of-accounts.html">會計科目</a></li>
+            <li><a href="account-form.html">新增科目</a> · <a href="account-form-error.html"><span class="neg">驗證失敗</span></a></li>
+            <li><a href="currencies.html">幣別/匯率</a> · <a href="parties.html">往來對象</a></li>
+            <li><a href="departments.html">部門</a> · <a href="bank-accounts.html">銀行帳戶</a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>傳票 GL</h3>
+          <ul class="page-list">
+            <li><a href="vouchers-list.html">傳票列表</a> · <a href="voucher-entry.html">新增</a></li>
+            <li><a href="voucher-detail.html">詳情草稿</a> · <a href="voucher-detail-approved.html">已核准</a></li>
+            <li><a href="voucher-approve.html">送審核准</a> · <a href="voucher-approve-blocked.html"><span class="neg">阻擋</span></a></li>
+            <li><a href="voucher-entry-unbalanced.html"><span class="neg">借貸不平</span></a> · <a href="voucher-entry-closed-period.html"><span class="neg">關帳期</span></a></li>
+            <li><a href="voucher-detail-void.html">已作廢</a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>報表 RPT</h3>
+          <ul class="page-list">
+            <li><a href="trial-balance.html">試算表</a></li>
+            <li><a href="balance-sheet.html">資產負債表</a></li>
+            <li><a href="income-statement.html">損益表</a></li>
+            <li><a href="account-ledger.html">科目明細帳</a></li>
+            <li><a href="report-empty.html"><span class="neg">無資料</span></a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>系統 SYS</h3>
+          <ul class="page-list">
+            <li><a href="settings.html">系統設定</a> · <a href="user-form.html">新增使用者</a></li>
+            <li><a href="fiscal-close.html">月結關帳</a> · <a href="fiscal-close-success.html">成功</a></li>
+            <li><a href="audit-log.html">稽核日誌</a></li>
+            <li><a href="error-generic.html"><span class="neg">系統錯誤</span></a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-block">
-      <h2>2. 主檔資料 (MD)</h2>
-      <div class="flow-grid">
-        <div class="flow-col positive">
-          <h3>正向</h3>
+    <!-- Phase 2 -->
+    <section id="phase2" class="phase-block">
+      <h2><span class="phase-badge p2">Phase 2</span> 帳款與收付款</h2>
+      <p class="phase-desc">應收/應付立帳 → 收付款沖銷 → 自動產生傳票 · 票據、批次收付、匯兌</p>
+      <div class="module-grid">
+        <div class="module-card">
+          <h3>應收 AR</h3>
           <ul class="page-list">
-            <li><a href="chart-of-accounts.html">會計科目表</a><span class="flow-id">MD-01</span></li>
-            <li><a href="account-form.html">新增／編輯科目</a><span class="flow-id">MD-01</span></li>
-            <li><a href="currencies.html">幣別</a><span class="flow-id">MD-02</span></li>
-            <li><a href="parties.html">往來對象</a><span class="flow-id">MD-03</span></li>
-            <li><a href="departments.html">部門</a><span class="flow-id">MD-04</span></li>
-            <li><a href="bank-accounts.html">銀行帳戶</a><span class="flow-id">MD-05</span></li>
+            <li><a href="phase2/ar-invoices-list.html">應收憑單列表</a></li>
+            <li><a href="phase2/ar-invoice-form.html">新增憑單</a> · <a href="phase2/ar-invoice-detail.html">詳情</a></li>
+            <li><a href="phase2/receipt-form.html">收款登錄</a> · <a href="phase2/receipt-allocate.html">沖銷</a></li>
+            <li><a href="phase2/ar-aging-report.html">帳齡分析</a></li>
+            <li><a href="phase2/ar-overpayment-error.html"><span class="neg">超額沖銷</span></a></li>
           </ul>
         </div>
-        <div class="flow-col negative">
-          <h3>負向</h3>
+        <div class="module-card">
+          <h3>應付 AP</h3>
           <ul class="page-list">
-            <li><a href="account-form-error.html">科目驗證失敗</a><span class="flow-id">MD-01 ✗</span></li>
+            <li><a href="phase2/ap-invoices-list.html">應付憑單列表</a></li>
+            <li><a href="phase2/ap-invoice-form.html">新增憑單</a> · <a href="phase2/ap-invoice-detail.html">詳情</a></li>
+            <li><a href="phase2/payment-form.html">付款登錄</a></li>
+            <li><a href="phase2/payment-request.html">請款單</a></li>
+            <li><a href="phase2/ap-payment-blocked.html"><span class="neg">付款阻擋</span></a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>票據 / 銀行</h3>
+          <ul class="page-list">
+            <li><a href="phase2/notes-receivable.html">應收票據</a></li>
+            <li><a href="phase2/notes-payable.html">應付票據</a></li>
+            <li><a href="phase2/bank-batch-payment.html">批次收付</a></li>
+            <li><a href="phase2/forex-settlement.html">匯兌結算</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-block">
-      <h2>3. 傳票與總帳 (VOU / GL)</h2>
-      <div class="flow-grid">
-        <div class="flow-col positive">
-          <h3>正向</h3>
+    <!-- Phase 3 -->
+    <section id="phase3" class="phase-block">
+      <h2><span class="phase-badge p3">Phase 3</span> 業務整合</h2>
+      <p class="phase-desc">銷貨/進貨 → 帳款 → 傳票 → 發票 · 期末調匯、盤點、銷貨成本</p>
+      <div class="module-grid">
+        <div class="module-card">
+          <h3>銷售</h3>
           <ul class="page-list">
-            <li><a href="vouchers-list.html">傳票列表</a><span class="flow-id">VOU-01</span></li>
-            <li><a href="voucher-entry.html">新增傳票</a><span class="flow-id">VOU-01</span></li>
-            <li><a href="voucher-detail.html">傳票詳情（草稿）</a><span class="flow-id">VOU-01</span></li>
-            <li><a href="voucher-approve.html">送審／核准</a><span class="flow-id">VOU-02</span></li>
-            <li><a href="voucher-detail-approved.html">已核准傳票</a><span class="flow-id">VOU-02</span></li>
-            <li><a href="voucher-detail-void.html">已作廢傳票</a><span class="flow-id">VOU-05</span></li>
+            <li><a href="phase3/sales-orders.html">銷售訂單</a> · <a href="phase3/sales-order-form.html">新增</a></li>
+            <li><a href="phase3/sales-delivery.html">銷貨單</a></li>
+            <li><a href="phase3/sales-return.html">銷退單</a></li>
+            <li><a href="phase3/sales-order-cancel-error.html"><span class="neg">取消失敗</span></a></li>
           </ul>
         </div>
-        <div class="flow-col negative">
-          <h3>負向</h3>
+        <div class="module-card">
+          <h3>採購</h3>
           <ul class="page-list">
-            <li><a href="voucher-entry-unbalanced.html">借貸不平衡</a><span class="flow-id">VOU-01 ✗</span></li>
-            <li><a href="voucher-entry-closed-period.html">已關帳期間</a><span class="flow-id">VOU-01 ✗</span></li>
-            <li><a href="voucher-approve-blocked.html">核准被阻擋</a><span class="flow-id">VOU-02 ✗</span></li>
+            <li><a href="phase3/purchase-orders.html">採購訂單</a> · <a href="phase3/purchase-order-form.html">新增</a></li>
+            <li><a href="phase3/purchase-receipt.html">進貨單</a></li>
+            <li><a href="phase3/purchase-return.html">進退單</a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>發票</h3>
+          <ul class="page-list">
+            <li><a href="phase3/invoice-tracks.html">字軌管理</a></li>
+            <li><a href="phase3/sales-invoice.html">銷項發票</a></li>
+            <li><a href="phase3/purchase-invoice.html">進項發票</a></li>
+            <li><a href="phase3/invoice-xml-upload.html">XML 上傳</a></li>
+            <li><a href="phase3/invoice-upload-error.html"><span class="neg">上傳失敗</span></a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>期末 / 整合</h3>
+          <ul class="page-list">
+            <li><a href="phase3/period-forex-reval.html">期末調匯</a></li>
+            <li><a href="phase3/inventory-count.html">存貨盤點</a></li>
+            <li><a href="phase3/cogs-close.html">銷貨成本結轉</a></li>
+            <li><a href="phase3/integration-flow.html">業務→財務流程圖</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-block">
-      <h2>4. 報表 (RPT)</h2>
-      <div class="flow-grid">
-        <div class="flow-col positive">
-          <h3>正向</h3>
+    <!-- Phase 4 -->
+    <section id="phase4" class="phase-block">
+      <h2><span class="phase-badge p4">Phase 4</span> 進階與合規</h2>
+      <p class="phase-desc">固定資產、預算控管、電子簽核、財務分析報表</p>
+      <div class="module-grid">
+        <div class="module-card">
+          <h3>固定資產</h3>
           <ul class="page-list">
-            <li><a href="trial-balance.html">試算表</a><span class="flow-id">RPT-01</span></li>
-            <li><a href="balance-sheet.html">資產負債表</a><span class="flow-id">RPT-02</span></li>
-            <li><a href="income-statement.html">損益表</a><span class="flow-id">RPT-03</span></li>
-            <li><a href="account-ledger.html">科目明細帳</a><span class="flow-id">RPT-04</span></li>
+            <li><a href="phase4/fixed-assets-list.html">資產清冊</a></li>
+            <li><a href="phase4/fixed-asset-form.html">新增資產</a></li>
+            <li><a href="phase4/depreciation-run.html">折舊作業</a></li>
+            <li><a href="phase4/asset-disposal.html">報廢/處分</a></li>
           </ul>
         </div>
-        <div class="flow-col negative">
-          <h3>負向</h3>
+        <div class="module-card">
+          <h3>預算</h3>
           <ul class="page-list">
-            <li><a href="report-empty.html">無資料／查詢無結果</a><span class="flow-id">RPT ✗</span></li>
+            <li><a href="phase4/budget-list.html">預算執行表</a></li>
+            <li><a href="phase4/budget-form.html">編輯預算</a></li>
+            <li><a href="phase4/budget-overrun.html"><span class="neg">超支阻擋</span></a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>電子簽核</h3>
+          <ul class="page-list">
+            <li><a href="phase4/approval-inbox.html">待辦簽核</a></li>
+            <li><a href="phase4/approval-detail.html">簽核詳情</a></li>
+            <li><a href="phase4/approval-rejected.html"><span class="neg">退回</span></a></li>
+          </ul>
+        </div>
+        <div class="module-card">
+          <h3>財務分析</h3>
+          <ul class="page-list">
+            <li><a href="phase4/cash-flow.html">現金流量表</a></li>
+            <li><a href="phase4/financial-ratios.html">財務比例</a></li>
+            <li><a href="phase4/management-dashboard.html">管理儀表板</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="module-block">
-      <h2>5. 系統 (SYS)</h2>
-      <div class="flow-grid">
-        <div class="flow-col positive">
-          <h3>正向</h3>
-          <ul class="page-list">
-            <li><a href="settings.html">系統設定</a><span class="flow-id">SYS-01</span></li>
-            <li><a href="user-form.html">新增使用者</a><span class="flow-id">SYS-02</span></li>
-            <li><a href="fiscal-close.html">月結關帳</a><span class="flow-id">SYS-03</span></li>
-            <li><a href="fiscal-close-success.html">關帳成功</a><span class="flow-id">SYS-03</span></li>
-            <li><a href="audit-log.html">稽核日誌</a><span class="flow-id">SYS-04</span></li>
-          </ul>
-        </div>
-        <div class="flow-col negative">
-          <h3>負向</h3>
-          <ul class="page-list">
-            <li><a href="fiscal-close.html">關帳前檢查失敗</a><span class="flow-id">SYS-03 ✗（同頁警示）</span></li>
-            <li><a href="error-generic.html">系統錯誤（通用）</a><span class="flow-id">全域</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <div class="doc-links">
-      <strong>規格文件：</strong>
-      <a href="../spec/flows/README.md">流程總覽</a>
-      <a href="../spec/flows/01-auth.md">認證</a>
-      <a href="../spec/flows/02-master-data.md">主檔</a>
-      <a href="../spec/flows/03-voucher-gl.md">傳票</a>
-      <a href="../spec/flows/04-reports.md">報表</a>
-      <a href="../spec/flows/05-system.md">系統</a>
-      <a href="wireframes.html">線框總覽</a>
-    </div>
+    <p style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--border);font-size:0.85rem;color:var(--muted)">
+      規格文件：<a href="../spec/flows/README.md">流程規格</a> ·
+      <a href="../financial-system-planning.md">Phase 路線圖</a> ·
+      <a href="../spec/README.md">規格索引</a>
+    </p>
   </div>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>銷項發票 — Fin8d Phase 3</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="sales-invoice.html">銷項發票</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">發票 / <strong>開立銷項發票</strong></div><div class="topbar-actions"><button class="btn btn-primary">開立並上傳</button></div></header>
+      <div class="content">
+        <div class="card"><div class="card-body">
+          <div class="form-row">
+            <div class="form-group"><label>來源銷貨單</label><input class="form-control" value="SD202609-0015" readonly /></div>
+            <div class="form-group"><label>字軌</label><select class="form-control"><option>AB — 2026/09-10</option></select></div>
+            <div class="form-group"><label>發票號碼</label><input class="form-control" value="AB00000129" readonly /></div>
+            <div class="form-group"><label>買方統編</label><input class="form-control" value="12345678" /></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>銷售額</label><input class="form-control" value="238,095" readonly /></div>
+            <div class="form-group"><label>稅額</label><input class="form-control" value="11,905" readonly /></div>
+            <div class="form-group"><label>總計</label><input class="form-control" value="250,000" readonly /></div>
+          </div>
+        </div></div>
+        <div class="alert alert-success">開立後自動產生 XML 並上傳 Turnkey · 關聯銷貨單與應收憑單</div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 3 Mockup</div>
+</body>
+</html>

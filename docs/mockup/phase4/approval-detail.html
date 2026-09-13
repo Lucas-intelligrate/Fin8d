@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>簽核詳情 — Fin8d Phase 4</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="approval-inbox.html">待辦簽核</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">簽核 / <strong>PR202609-0015</strong></div></header>
+      <div class="content">
+        <div class="grid-2">
+          <div class="card"><div class="card-header">請款內容</div><div class="card-body">
+            <p><strong>申請人：</strong>張業務 · <strong>金額：</strong>12,800</p>
+            <p><strong>摘要：</strong>台北客戶拜訪差旅</p>
+            <p><strong>附件：</strong>高鐵票、住宿發票 PDF × 2</p>
+          </div></div>
+          <div class="card"><div class="card-header">簽核流程</div><div class="card-body">
+            <div style="display:flex;flex-direction:column;gap:0.75rem">
+              <div><span class="badge badge-approved">✓</span> 張業務 提交 · 09/13 09:15</div>
+              <div><span class="badge badge-pending">●</span> 部門主管 待簽 · 您</div>
+              <div><span class="badge badge-draft">○</span> 財務主管</div>
+              <div><span class="badge badge-draft">○</span> 出納付款</div>
+            </div>
+          </div></div>
+        </div>
+        <div class="card"><div class="card-body">
+          <div class="form-group"><label>簽核意見</label><textarea class="form-control" rows="2" placeholder="選填"></textarea></div>
+          <div style="display:flex;gap:0.75rem">
+            <button class="btn btn-success">核准</button>
+            <a href="approval-rejected.html" class="btn btn-danger">退回</a>
+          </div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 4 Mockup</div>
+</body>
+</html>

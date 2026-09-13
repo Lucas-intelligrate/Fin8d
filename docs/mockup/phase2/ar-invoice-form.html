@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>新增應收憑單 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <a class="nav-link active" href="ar-invoices-list.html">應收憑單</a>
+        <a class="nav-link" href="../index.html">← 索引</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">應收 / <strong>新增應收憑單</strong></div>
+        <div class="topbar-actions">
+          <a class="btn btn-outline" href="ar-invoices-list.html">取消</a>
+          <button class="btn btn-primary">儲存並立帳</button>
+        </div>
+      </header>
+      <div class="content">
+        <div class="card">
+          <div class="card-header">表頭</div>
+          <div class="card-body">
+            <div class="form-row">
+              <div class="form-group"><label>客戶 *</label><select class="form-control"><option>C001 台灣科技股份有限公司</option></select></div>
+              <div class="form-group"><label>憑單日期 *</label><input class="form-control" type="date" value="2026-09-13" /></div>
+              <div class="form-group"><label>到期日 *</label><input class="form-control" type="date" value="2026-10-13" /></div>
+              <div class="form-group"><label>幣別</label><select class="form-control"><option>TWD</option><option>USD</option></select></div>
+            </div>
+            <div class="form-group"><label>摘要</label><input class="form-control" value="9月軟體授權費" /></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">明細</div>
+          <div class="card-body table-wrap">
+            <table>
+              <thead><tr><th>品項/說明</th><th class="text-right">數量</th><th class="text-right">單價</th><th class="text-right">未稅</th><th class="text-right">稅額</th><th class="text-right">含稅</th></tr></thead>
+              <tbody>
+                <tr><td>Fin8d 企業版授權</td><td class="text-right">1</td><td class="text-right">238,095</td><td class="text-right">238,095</td><td class="text-right">11,905</td><td class="text-right">250,000</td></tr>
+              </tbody>
+              <tfoot><tr><td colspan="5" class="text-right"><strong>合計</strong></td><td class="text-right"><strong>250,000</strong></td></tr></tfoot>
+            </table>
+          </div>
+        </div>
+        <div class="alert alert-info">儲存後將自動產生立帳傳票：借 應收帳款 / 貸 銷貨收入</div>
+        <p style="font-size:0.85rem;color:var(--muted)">流程：AR-01 正向 · 手動立帳</p>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

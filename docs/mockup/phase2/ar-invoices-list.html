@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>應收憑單 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin<span>8</span>d</div>
+      <nav>
+        <div class="nav-section">Phase 2 · 應收</div>
+        <a class="nav-link active" href="ar-invoices-list.html">應收憑單</a>
+        <a class="nav-link" href="receipt-form.html">收款登錄</a>
+        <a class="nav-link" href="ar-aging-report.html">帳齡分析</a>
+        <div class="nav-section">應付</div>
+        <a class="nav-link" href="ap-invoices-list.html">應付憑單</a>
+        <a class="nav-link" href="payment-form.html">付款登錄</a>
+        <div class="nav-section">票據 / 銀行</div>
+        <a class="nav-link" href="notes-receivable.html">應收票據</a>
+        <a class="nav-link" href="bank-batch-payment.html">批次收付</a>
+        <div class="nav-section">← Phase 1</div>
+        <a class="nav-link" href="../index.html">Mockup 索引</a>
+      </nav>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <div class="breadcrumb">應收 / <strong>應收憑單</strong></div>
+        <div class="topbar-actions"><span>林會計 ▾</span></div>
+      </header>
+      <div class="content">
+        <div class="kpi-grid">
+          <div class="kpi-card"><div class="kpi-label">未收餘額</div><div class="kpi-value warning">$1,285,400</div></div>
+          <div class="kpi-card"><div class="kpi-label">逾期 30+ 天</div><div class="kpi-value" style="color:var(--danger)">$128,000</div></div>
+          <div class="kpi-card"><div class="kpi-label">本月立帳</div><div class="kpi-value">12 張</div></div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="toolbar">
+              <div class="form-group" style="max-width:140px"><label>起日</label><input class="form-control" type="date" value="2026-09-01" /></div>
+              <div class="form-group" style="max-width:140px"><label>迄日</label><input class="form-control" type="date" value="2026-09-30" /></div>
+              <div class="form-group" style="max-width:160px"><label>客戶</label><select class="form-control"><option>全部</option><option>C001 台灣科技</option></select></div>
+              <div class="form-group" style="max-width:120px"><label>狀態</label><select class="form-control"><option>全部</option><option>未結清</option><option>已結清</option></select></div>
+              <button class="btn btn-outline">查詢</button>
+              <a class="btn btn-primary" href="ar-invoice-form.html" style="margin-left:auto">+ 新增應收憑單</a>
+            </div>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>憑單號</th><th>日期</th><th>客戶</th><th>到期日</th><th class="text-right">金額</th><th class="text-right">未收</th><th>狀態</th><th>操作</th></tr></thead>
+                <tbody>
+                  <tr><td class="mono"><a href="ar-invoice-detail.html">AR202609-0088</a></td><td>2026-09-10</td><td>C001 台灣科技</td><td>2026-10-10</td><td class="text-right">250,000</td><td class="text-right">250,000</td><td><span class="badge badge-open">未結清</span></td><td><a href="receipt-allocate.html" class="btn btn-sm btn-outline">收款</a></td></tr>
+                  <tr><td class="mono"><a href="ar-invoice-detail.html">AR202609-0085</a></td><td>2026-09-05</td><td>C003 創新軟體</td><td>2026-09-05</td><td class="text-right">85,400</td><td class="text-right">35,400</td><td><span class="badge badge-pending">部分收款</span></td><td><a href="receipt-allocate.html" class="btn btn-sm btn-outline">收款</a></td></tr>
+                  <tr><td class="mono">AR202608-0072</td><td>2026-08-20</td><td>C002 優質貿易</td><td>2026-09-20</td><td class="text-right">128,000</td><td class="text-right">128,000</td><td><span class="badge badge-void">逾期</span></td><td><a href="receipt-allocate.html" class="btn btn-sm btn-outline">收款</a></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--muted)">流程：AR-01 正向 · 應收憑單列表</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

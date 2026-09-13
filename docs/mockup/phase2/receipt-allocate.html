@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>收款沖銷 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="receipt-form.html">收款</a></nav></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">應收 / <strong>收款沖銷</strong></div><div class="topbar-actions"><button class="btn btn-primary">確認沖銷並過帳</button></div></header>
+      <div class="content">
+        <div class="alert alert-info">收款金額：<strong>50,000</strong> · 待分配：<strong class="balance-ok">0</strong></div>
+        <div class="card"><div class="card-body table-wrap">
+          <table>
+            <thead><tr><th><input type="checkbox" checked /></th><th>憑單號</th><th>到期日</th><th class="text-right">未收</th><th class="text-right">本次沖銷</th></tr></thead>
+            <tbody>
+              <tr><td><input type="checkbox" checked /></td><td class="mono">AR202609-0085</td><td>2026-09-05</td><td class="text-right">35,400</td><td class="text-right"><input class="form-control" style="width:100px;text-align:right" value="35400" /></td></tr>
+              <tr><td><input type="checkbox" checked /></td><td class="mono">AR202608-0060</td><td>2026-08-15</td><td class="text-right">20,000</td><td class="text-right"><input class="form-control" style="width:100px;text-align:right" value="14600" /></td></tr>
+            </tbody>
+          </table>
+        </div></div>
+        <div class="alert alert-success">沖銷完成後自動產生傳票：借 銀行存款 / 貸 應收帳款</div>
+        <p style="font-size:0.85rem;color:var(--muted)">流程：AR-02 正向 · 沖銷分配</p>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 Mockup</div>
+</body>
+</html>

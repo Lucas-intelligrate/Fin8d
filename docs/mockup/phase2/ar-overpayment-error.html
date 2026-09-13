@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>收款沖銷失敗 — Fin8d Phase 2</title>
+  <link rel="stylesheet" href="../assets/mockup.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div></aside>
+    <div class="main">
+      <header class="topbar"><div class="breadcrumb">應收 / <strong>收款沖銷</strong></div></header>
+      <div class="content">
+        <div class="alert alert-error"><strong>沖銷金額超出收款金額</strong><br>收款 50,000，已分配 52,000，差额 2,000。請調整沖銷金額。</div>
+        <div class="card"><div class="card-body table-wrap">
+          <table>
+            <thead><tr><th>憑單號</th><th class="text-right">未收</th><th class="text-right">本次沖銷</th></tr></thead>
+            <tbody>
+              <tr><td class="mono">AR202609-0085</td><td class="text-right">35,400</td><td class="text-right"><input class="form-control field-error" style="width:100px;text-align:right" value="52000" /></td></tr>
+            </tbody>
+          </table>
+          <p class="hint-error">沖銷合計不可大於收款金額</p>
+        </div></div>
+        <p style="font-size:0.85rem;color:var(--muted)">流程：AR-02 負向 · 超額沖銷</p>
+      </div>
+    </div>
+  </div>
+  <div class="tag-mockup">Phase 2 · 負向</div>
+</body>
+</html>

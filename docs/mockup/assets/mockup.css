@@ -297,3 +297,7 @@ tr:hover td { background: #f8fafc; }
 .page-section-title { font-size: 1rem; font-weight: 600; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
 .flow-tag { font-size: 0.7rem; background: #e0f2fe; color: #0369a1; padding: 0.15rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; }
 .flow-tag-neg { background: #fee2e2; color: #b91c1c; }
+
+.tag-mockup.phase2 { background: #15803d; }
+.tag-mockup.phase3 { background: #b45309; }
+.tag-mockup.phase4 { background: #7c3aed; }
