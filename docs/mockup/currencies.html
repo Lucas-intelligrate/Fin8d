@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>幣別與匯率 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav>
+    <a class="nav-link" href="dashboard.html">儀表板</a>
+    <a class="nav-link" href="chart-of-accounts.html">會計科目</a>
+    <a class="nav-link active" href="currencies.html">幣別/匯率</a>
+    <a class="nav-link" href="parties.html">往來對象</a>
+  </nav></aside>
+  <div class="main">
+    <header class="topbar"><div class="breadcrumb">主檔 / <strong>幣別與匯率</strong></div></header>
+    <div class="content">
+      <div class="card"><div class="card-header">幣別 <button class="btn btn-sm btn-primary">+ 新增</button></div>
+        <div class="card-body table-wrap" style="padding:0"><table>
+          <thead><tr><th>代碼</th><th>名稱</th><th>小數位</th><th>本位幣</th><th></th></tr></thead>
+          <tbody>
+            <tr><td class="mono">TWD</td><td>新台幣</td><td>0</td><td>✓</td><td>—</td></tr>
+            <tr><td class="mono">USD</td><td>美元</td><td>2</td><td></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+            <tr><td class="mono">JPY</td><td>日圓</td><td>0</td><td></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="card"><div class="card-header">匯率表 <button class="btn btn-sm btn-outline">+ 新增匯率</button></div>
+        <div class="card-body table-wrap" style="padding:0"><table>
+          <thead><tr><th>日期</th><th>幣別</th><th>匯率（對 TWD）</th><th>來源</th></tr></thead>
+          <tbody>
+            <tr><td>2026-09-13</td><td>USD</td><td class="text-right">31.2500</td><td>manual</td></tr>
+            <tr><td>2026-09-13</td><td>JPY</td><td class="text-right">0.2150</td><td>manual</td></tr>
+          </tbody>
+        </table></div>
+        <div class="card-body"><div class="alert alert-warning">反向 FL-MD-05 N1：同日同幣別重複 → 409 衝突提示</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="tag-mockup"><a href="index.html" style="color:#fff">FL-MD-04/05</a></div>
+</body>
+</html>

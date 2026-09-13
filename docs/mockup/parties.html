@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>往來對象 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav>
+    <a class="nav-link" href="dashboard.html">儀表板</a>
+    <a class="nav-link active" href="parties.html">客戶/廠商</a>
+    <a class="nav-link" href="departments.html">部門</a>
+    <a class="nav-link" href="bank-accounts.html">銀行帳戶</a>
+  </nav></aside>
+  <div class="main">
+    <header class="topbar"><div class="breadcrumb">主檔 / <strong>往來對象</strong></div></header>
+    <div class="content">
+      <div class="card"><div class="card-body">
+        <div class="toolbar">
+          <button class="btn btn-primary">+ 新增</button>
+          <select class="form-control" style="max-width:120px"><option>全部</option><option>客戶</option><option>廠商</option></select>
+          <input class="form-control" style="max-width:200px" placeholder="搜尋名稱/統編" />
+        </div>
+        <div class="table-wrap"><table>
+          <thead><tr><th>代碼</th><th>名稱</th><th>類型</th><th>統編</th><th>Email</th><th>狀態</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>C001</td><td>ABC 科技股份有限公司</td><td>客戶</td><td>12345678</td><td>ap@abc.com</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+            <tr><td>V001</td><td>XYZ 文具行</td><td>廠商</td><td>87654321</td><td>—</td><td><span class="badge badge-approved">啟用</span></td><td><button class="btn btn-sm btn-outline">編輯</button></td></tr>
+          </tbody>
+        </table></div>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="tag-mockup"><a href="index.html" style="color:#fff">FL-MD-08</a></div>
+</body>
+</html>

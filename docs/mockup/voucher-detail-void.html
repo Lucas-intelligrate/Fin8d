@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fin8d — 傳票已作廢</title>
+  <link rel="stylesheet" href="assets/mockup.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin8d</div>
+      <nav class="sidebar-nav">
+        <a href="vouchers-list.html" class="nav-item active">傳票管理</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar"><h1>傳票 V20250912005</h1></header>
+      <div class="content-area">
+        <div class="alert alert-error">
+          <strong>此傳票已作廢</strong><br>
+          作廢原因：重複開立 · 作廢時間：2025-09-13 10:00 · 操作者：會計主管
+        </div>
+        <div class="card" style="opacity:0.7;">
+          <span class="badge badge-void">已作廢</span>
+          <table style="margin-top:1rem;">
+            <thead><tr><th>科目</th><th>摘要</th><th class="num">借方</th><th class="num">貸方</th></tr></thead>
+            <tbody>
+              <tr><td>5101 進貨成本</td><td>採購</td><td class="num">10,000</td><td class="num">—</td></tr>
+              <tr><td>2101 應付帳款</td><td>採購</td><td class="num">—</td><td class="num">10,000</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-muted);">流程：VOU-05 正向 · 作廢後狀態</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

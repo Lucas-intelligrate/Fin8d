@@ -277,3 +277,23 @@ tr:hover td { background: #f8fafc; }
   font-size: 0.75rem;
   opacity: 0.85;
 }
+
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+}
+.alert-error { background: #fef2f2; border-color: #fecaca; color: #b91c1c; }
+.alert-warning { background: #fffbeb; border-color: #fde68a; color: #b45309; }
+.alert-success { background: #f0fdf4; border-color: #bbf7d0; color: #15803d; }
+.alert-info { background: #eff6ff; border-color: #bfdbfe; color: #1d4ed8; }
+.banner-locked { background: #fef2f2; border-bottom: 1px solid #fecaca; padding: 0.65rem 1.5rem; color: #b91c1c; font-size: 0.875rem; }
+.field-error { border-color: var(--danger) !important; }
+.hint-error { color: var(--danger); font-size: 0.75rem; margin-top: 0.25rem; }
+.empty-state { text-align: center; padding: 3rem 1rem; color: var(--muted); }
+.empty-state-icon { font-size: 2.5rem; margin-bottom: 0.75rem; }
+.page-section-title { font-size: 1rem; font-weight: 600; margin: 2rem 0 1rem; padding-bottom: 0.5rem; border-bottom: 1px solid var(--border); }
+.flow-tag { font-size: 0.7rem; background: #e0f2fe; color: #0369a1; padding: 0.15rem 0.5rem; border-radius: 4px; margin-left: 0.5rem; }
+.flow-tag-neg { background: #fee2e2; color: #b91c1c; }

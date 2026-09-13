@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>關帳期間不可編輯 — Fin8d</title>
+  <link rel="stylesheet" href="assets/mockup.css" />
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar"><div class="sidebar-brand">Fin<span>8</span>d</div><nav><a class="nav-link active" href="voucher-entry.html">新增傳票</a></nav></aside>
+  <div class="main">
+    <div class="banner-locked">⚠ 會計期間 2026-08 已關帳，無法新增或修改傳票。<span class="flow-tag flow-tag-neg">FL-GL-01 N4 · 409</span></div>
+    <header class="topbar"><div class="breadcrumb">總帳 / 新增傳票</div></header>
+    <div class="content">
+      <div class="card"><div class="card-body">
+        <div class="form-group"><label>傳票日期</label><input class="form-control field-error" type="date" value="2026-08-15" disabled /></div>
+        <p class="hint-error">請選擇開放中的會計期間（目前：2026-09）</p>
+        <button class="btn btn-primary" disabled>存草稿</button>
+        <a class="btn btn-outline" href="fiscal-close.html">查看關帳狀態</a>
+      </div></div>
+    </div>
+  </div>
+</div>
+<div class="tag-mockup"><a href="index.html" style="color:#fff">反向</a></div>
+</body>
+</html>

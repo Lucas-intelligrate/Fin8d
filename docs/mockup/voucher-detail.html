@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fin8d — 傳票詳情（草稿）</title>
+  <link rel="stylesheet" href="assets/mockup.css">
+</head>
+<body>
+  <div class="app-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">Fin8d</div>
+      <nav class="sidebar-nav">
+        <a href="dashboard.html" class="nav-item">儀表板</a>
+        <a href="vouchers-list.html" class="nav-item active">傳票管理</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <header class="topbar">
+        <h1>傳票 V20250913001</h1>
+        <div class="topbar-actions">
+          <a href="voucher-approve.html" class="btn btn-primary">送審</a>
+          <a href="vouchers-list.html" class="btn btn-secondary">返回列表</a>
+        </div>
+      </header>
+      <div class="content-area">
+        <div class="card">
+          <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:1rem;">
+            <span><strong>日期：</strong>2025-09-13</span>
+            <span><strong>類型：</strong>轉帳</span>
+            <span><span class="badge badge-draft">草稿</span></span>
+          </div>
+          <table>
+            <thead><tr><th>科目</th><th>摘要</th><th class="num">借方</th><th class="num">貸方</th></tr></thead>
+            <tbody>
+              <tr><td>1101 銀行存款</td><td>收款</td><td class="num">50,000</td><td class="num">—</td></tr>
+              <tr><td>4101 銷貨收入</td><td>收款</td><td class="num">—</td><td class="num">50,000</td></tr>
+            </tbody>
+          </table>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--text-muted);">流程：VOU-01 正向 · 儲存草稿後詳情</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
