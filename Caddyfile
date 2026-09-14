@@ -1,6 +1,18 @@
 :8080 {
-	root * /srv
-	file_server
 	encode gzip
-	try_files {path} /index.html
+	root * /srv
+
+	# /mockup 必須走 mockup 目錄，不可 fallback 到根 index.html
+	redir /mockup /mockup/ 308
+
+	@mockup path /mockup /mockup/ /mockup/*
+	handle @mockup {
+		try_files {path} {path}/ /mockup/index.html
+		file_server
+	}
+
+	handle {
+		try_files {path} /index.html
+		file_server
+	}
 }

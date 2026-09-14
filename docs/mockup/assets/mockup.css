@@ -301,3 +301,69 @@ tr:hover td { background: #f8fafc; }
 .tag-mockup.phase2 { background: #15803d; }
 .tag-mockup.phase3 { background: #b45309; }
 .tag-mockup.phase4 { background: #7c3aed; }
+
+/* 全域 mockup 頂部導覽 */
+.mockup-global-bar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.45rem 1rem;
+  background: #0c4a6e;
+  color: #e0f2fe;
+  font-size: 0.8rem;
+  border-bottom: 1px solid #075985;
+  flex-wrap: wrap;
+}
+.mockup-bar-brand {
+  font-weight: 700;
+  color: #fff !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+.mockup-bar-phases {
+  display: flex;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.mockup-bar-phase {
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  color: #bae6fd !important;
+  text-decoration: none !important;
+  border: 1px solid transparent;
+}
+.mockup-bar-phase:hover { background: rgba(255,255,255,0.1); }
+.mockup-bar-phase.active {
+  background: #0ea5e9;
+  color: #fff !important;
+  border-color: #38bdf8;
+}
+.mockup-bar-index {
+  color: #7dd3fc !important;
+  text-decoration: none !important;
+  white-space: nowrap;
+}
+body:has(.mockup-global-bar) .app-shell,
+body:has(.mockup-global-bar) .app-layout {
+  min-height: calc(100vh - 36px);
+}
+
+/* 舊版 class 相容 */
+.app-layout { display: flex; min-height: 100vh; }
+.app-layout .sidebar { width: 240px; background: var(--sidebar); color: #e2e8f0; flex-shrink: 0; }
+.app-layout .main-content { flex: 1; min-width: 0; }
+.app-layout .sidebar-nav { padding: 0.75rem 0; }
+.app-layout .nav-item {
+  display: block; padding: 0.55rem 1rem; color: #cbd5e1; font-size: 0.9rem;
+  border-left: 3px solid transparent; text-decoration: none;
+}
+.app-layout .nav-item:hover, .app-layout .nav-item.active {
+  background: var(--sidebar-hover); color: #fff; border-left-color: var(--primary);
+}
+.btn-secondary { background: #fff; border: 1px solid var(--border); color: var(--text); }
+.content-area { padding: 1.5rem; }
+.num { text-align: right; }

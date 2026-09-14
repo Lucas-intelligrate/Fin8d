@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>登入 — Fin8d</title>
-  <link rel="stylesheet" href="assets/mockup.css" />
+  <link rel="stylesheet" href="/mockup/assets/mockup.css" />
 </head>
 <body>
   <div class="login-page">
@@ -13,7 +13,7 @@
         <h1>Fin<span style="color:var(--primary)">8</span>d</h1>
         <p>雲端財務系統</p>
       </div>
-      <form onsubmit="event.preventDefault();location.href='dashboard.html'">
+      <form onsubmit="event.preventDefault();location.href='/mockup/dashboard.html'">
         <div class="form-group" style="margin-bottom:1rem">
           <label>Email</label>
           <input class="form-control" type="email" value="accountant@intelligrate.com.tw" />
@@ -24,11 +24,12 @@
         </div>
         <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">登入</button>
         <p style="text-align:center;margin-top:1rem;font-size:0.85rem">
-          <a href="#">忘記密碼？</a>
+          <a href="/mockup/password-reset-request.html">忘記密碼？</a>
         </p>
       </form>
     </div>
   </div>
-  <div class="tag-mockup"><a href="index.html" style="color:#fff">← Mockup 首頁</a></div>
+  <div class="tag-mockup"><a href="/mockup/index.html" style="color:#fff">← Mockup 首頁</a></div>
+  <script src="/mockup/assets/mockup-nav.js"></script>
 </body>
 </html>
