@@ -86,14 +86,38 @@ P2-AR / 收款沖銷 / 超額錯誤
 
 ---
 
-## Agent 建立步驟（認證完成後）
+## 線上檔案（已建立）
 
-1. `whoami` → 取得 `planKey`
-2. `create_new_file` → `Fin8d — Wireframes & Prototype`
-3. `use_figma` → 執行 `scripts/build-phase1-wireframes.js`（Phase 1 骨架）
-4. 依 `frame-inventory.md` 擴充 Phase 2–4
-5. 依 `prototype-flows.md` 設定 Prototype 連線
-6. 回傳 `file_url` 給團隊
+| 項目 | 連結 |
+|------|------|
+| **Design 檔** | https://www.figma.com/design/dsde3bf7DiYDD49E2DPzI0/Fin8d-%E2%80%94-Wireframes-%26-Prototype |
+| **帳號** | lucas.lu@intelligrate.com.tw |
+| **Team** | lucas.lu's team (Starter) |
+
+### 已完成的 Phase 1 畫面
+
+- 📋 Cover 說明頁
+- AUTH / 登入 / 正向
+- AUTH / 儀表板
+- GL / 傳票登打 / 正向
+- RPT / 試算表
+- SYS / 月結關帳
+
+### Prototype 連線（可點擊試流程）
+
+**Starting point：** `AUTH / 登入 / 正向`（P1 頁）
+
+登入 → 儀表板 → 傳票登打 → 試算表 → 關帳
+
+在 Figma 右上角 **Present** 即可試點。
+
+---
+
+## Agent 擴充步驟
+
+1. 依 `frame-inventory.md` 擴充 Phase 2–4 Pages
+2. 依 `prototype-flows.md` 補齊連線
+3. 執行 `scripts/build-phase1-wireframes.js` 作為 `$fig` 腳本範本
 
 ---
 
