@@ -28,6 +28,14 @@
 
 完整對照表見 [mockup/index.html](../mockup/index.html) 與 [flows/](./flows/README.md)。
 
+## Figma Wireframe（建議）
+
+| 文件 | 說明 |
+|------|------|
+| [docs/figma/README.md](../figma/README.md) | Figma 帳號、MCP 認證、檔案結構 |
+| [frame-inventory.md](../figma/frame-inventory.md) | 88 Frame 對照清單 |
+| [prototype-flows.md](../figma/prototype-flows.md) | Prototype 連線規格 |
+
 ## 相關文件
 
 - [財務系統規劃（Phase 路線圖）](../financial-system-planning.md)
